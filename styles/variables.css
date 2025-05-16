@@ -1,4 +1,74 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /*pallete dark theme*/
+
+  --pink: #f1b2ce;
+  --violet: #db00ff;
+  --red: #ff0070;
+  --crimson: rgba(255 0 112 / 0.4);
+  --black: #000028;
+
+  /*pallete light theme*/
+
+  --pink-2: #ff8dcb;
+  --pink-3: #ffc2e6;
+  --crimson-2: rgba(255 141 203 / 0.4);
+  --grey: #353430;
+  --grey-2: rgba(50 49 45 / 0.4);
+  --white: #fff1f7;
+
+  /*page colors*/
+
+  --decor-elem-color: var(--red);
+  --accent-color: var(--red);
+  --outline-color: var(--crimson);
+  --heading-color: var(--violet);
+  --title-decor: var(--black);
+  --content-title-color: var(--red);
+  --text-color: var(--pink);
+  --bg-color: var(--black);
+  --button-color: var(--red);
+
+  /*shadows*/
+
+  --lightbulb-shadow: 0 0 4px 2px var(--accent-color);
+  --heading-text-shadow-1: 4px 4px 0 var(--accent-color);
+  --heading-text-shadow-2: 2px 2px 0 var(--red);
+  --link-shadow: 2px 2px 0 var(--accent-color);
+
+  /*typography*/
+
+  --body-font: "IBM Plex Mono";
+  --body-font-size: 1.125rem;
+  --heading-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+
+  --main-padding-inline: 10px;
+  --main-padding-block: 40px;
+  --content-margin-block-end: 50px;
+
+  /*images*/
+
+  --bg-image: url(../images/cover-image-dark.png);
+
+  /*layout*/
+
+  --grid-template-columns: 1fr;
+  --grid-gap: 20px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --heading-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+    --main-padding-inline: 20px;
+    --main-padding-block: 60px;
+    --content-margin-block-end: 80px;
+
+    --grid-template-columns: 236px 1fr;
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+    --grid-template-columns: 315px 1fr;
+  }
+}
