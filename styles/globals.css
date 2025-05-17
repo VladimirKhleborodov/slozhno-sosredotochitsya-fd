@@ -14,13 +14,14 @@ body {
 }
 
 body {
-  font-family: var(--body-font), monospace;
+  font-family: var(--body-font), "Courier New", Courier, monospace;
   font-size: var(--body-font-size);
-  font-weight: normal;
+  font-weight: var(--body-font-weight);
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin-inline: auto;
   margin-block: 0;
+  background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -31,22 +32,24 @@ body {
 h1,
 h2,
 h3,
-p {
-  margin-inline: 0;
-  margin-block: 0;
-}
-
-h2,
-h3 {
-  font-size: inherit;
-}
-
-ul {
+h4,
+p,
+ul,
+li {
   margin-inline: 0;
   margin-block: 0;
   padding-inline: 0;
   padding-block: 0;
+}
+
+ul {
   list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  font-size: inherit;
 }
 
 img {

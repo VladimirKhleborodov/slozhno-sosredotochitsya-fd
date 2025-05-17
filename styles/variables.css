@@ -7,7 +7,7 @@
   --crimson: rgba(255 0 112 / 0.4);
   --black: #000028;
 
-  /*pallete light theme*/
+  /*palette light theme*/
 
   --pink-2: #ff8dcb;
   --pink-3: #ffc2e6;
@@ -39,6 +39,7 @@
 
   --body-font: "IBM Plex Mono";
   --body-font-size: 1.125rem;
+  --body-font-weight: normal;
   --heading-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 
   --main-padding-inline: 10px;

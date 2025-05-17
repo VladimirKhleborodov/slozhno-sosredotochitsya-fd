@@ -12,7 +12,7 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
-.page .lightbulb {
+.theme-light .page .lightbulb {
   display: none;
 }
 
@@ -20,7 +20,7 @@
   :root {
     --decor-elem-color: var(--grey);
     --accent-color: var(--pink-2);
-    --outline-color: var(--crimson-2);
+    --outline-color: var(--grey-2);
     --heading-color: var(--pink-3);
     --title-decor: var(--grey);
     --content-title-color: var(--grey);
